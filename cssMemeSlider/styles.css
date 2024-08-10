@@ -8,35 +8,38 @@ body {
   height: 100vh;
 }
 .slider {
-  width: 300px;
+  width: 400px; /* Увеличиваем ширину слайдера */
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease;
-  width: 1200px;
+  transition: transform 0.5s ease; /* Плавный переход при смене слайдов */
+  width: 400px; /* Ширина равна ширине видимой области слайдера */
 }
+
 .slide {
-  width: 300px;
-  flex-shrink: 0;
+  width: 400px; /* Ширина каждого слайда, равна ширине видимой области слайдера */
+  flex-shrink: 0; /* Не позволяет слайдам сжиматься */
 }
 
 img {
-  width: 100%;
-  display: block;
+  width: 100%; /* Изображение масштабируется по ширине слайда */
+  height: auto; /* Сохраняет пропорции изображения */
+  display: block; /* Убирает пробелы под изображением */
   border-radius: 10px;
 }
 
 .controls {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .control {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   margin: 0 5px;
   background-color: #ccc;
   border-radius: 50%;
@@ -44,5 +47,5 @@ img {
   cursor: pointer;
 }
 .control.active {
-  background-color: #333;
+  background-color: #513178;
 }
